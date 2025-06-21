@@ -1,0 +1,161 @@
+.carousel-inner .carousel-item>div {
+    position: relative;
+    padding: 80px 30px;
+}
+
+.carousel-inner h1,
+.carousel-inner p {
+    text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.6);
+}
+
+/* welcome section starts */
+.welcome-section {
+    padding: 100px 0;
+    background: linear-gradient(120deg, #f7f9fb, #e3e7ec);
+    color: #2c3e50;
+}
+
+.container-welcome {
+    margin: 0px auto;
+}
+
+.carousel-item .container {
+    margin: 0px auto;
+}
+
+.welcome-header h2 {
+    font-weight: 600;
+    font-size: 2.4rem;
+    color: #2c3e50;
+}
+
+.welcome-header p {
+    color: #5e6e7e;
+    font-size: 1.05rem;
+}
+
+.highlight-bar {
+    width: 80px;
+    height: 4px;
+    background: #5d7290;
+    margin: 1.5rem auto;
+}
+
+.info-box {
+    background: rgba(255, 255, 255, 0.9);
+    padding: 30px;
+    border-radius: 20px;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.08);
+    backdrop-filter: blur(10px);
+    transition: all 0.4s ease;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.info-box:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 12px 35px rgba(0, 0, 0, 0.15);
+}
+
+.info-box i {
+    font-size: 40px;
+    color: #5d7290;
+    padding: 12px;
+    background: #ffffff;
+    border-radius: 50%;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.05), -5px -5px 15px rgba(255, 255, 255, 0.5);
+    transition: background 0.3s, color 0.3s;
+}
+
+.info-box:hover i {
+    background: #5d7290;
+    color: white;
+}
+
+.info-box h5 {
+    font-weight: 600;
+    margin-top: 20px;
+    margin-bottom: 15px;
+}
+
+.text-justify {
+    text-align: justify;
+}
+
+/* welcome section ends */
+
+/* media queries for responsive design */
+@media screen and (max-width: 411px) {
+    .carousel-item .container {
+        margin: 0px !important;
+    }
+
+    .carousel-item .container h3 {
+        font-size: 18px !important;
+    }
+
+    .carousel-item .container p {
+        font-size: 14px !important;
+    }
+
+    .carousel-inner .carousel-item>div {
+        padding: 60px 20px;
+    }
+
+    .carousel-item .bg-image-carousel {
+        height: 350px !important;
+    }
+
+    .welcome-section {
+        padding: 40px 0;
+    }
+
+    .welcome-header p {
+        color: #5e6e7e;
+        font-size: 0.89rem;
+    }
+
+    .welcome-header h2 {
+        font-weight: 600;
+        font-size: 1.8rem;
+        margin-bottom: 10px !important;
+    }
+}
+
+@media (min-width:412px) and (max-width: 768px) {
+    .carousel-item .container {
+        margin: 0px auto;
+    }
+
+    .carousel-item .container h3 {
+        font-size: 33px;
+        text-align: center !important;
+    }
+
+    .carousel-item .container p {
+        font-size: 20px;
+    }
+
+    .carousel-inner .carousel-item>div {
+        padding: 60px 20px;
+    }
+
+    .carousel-item .bg-image-carousel {
+        height: 425px !important;
+    }
+
+    .welcome-section {
+        padding: 40px 0;
+    }
+
+    .welcome-header p {
+        color: #5e6e7e;
+        font-size: 1.2rem;
+    }
+
+    .welcome-header h2 {
+        font-weight: 600;
+        font-size: 2rem;
+        margin-bottom: 10px !important;
+    }
+
+}

@@ -1,0 +1,668 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"> <!-- Ensures compatibility -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Ventura Alloy and Steels Pvt. Ltd. | Quality Steel Solutions</title>
+
+    <meta name="description"
+        content="Ventura Alloy and Steels Pvt. Ltd. provides high-quality alloy and steel products for various industrial applications. Our commitment to quality and customer satisfaction sets us apart in the steel industry.">
+
+    <meta name="keywords"
+        content="Alloy, Steels, Ventura Alloy, Steel Products, Industrial Steel Solutions, Quality Steel, Steel Manufacturing, Alloy Manufacturing, Steel Industry">
+
+    <meta name="author" content="Ventura Alloy and Steels Pvt. Ltd.">
+
+
+    <!-- Bootstrap link -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Bootstrap Icons -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
+
+    <!-- Leaflet CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+
+
+    <!-- google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+
+    <!-- Lora google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+    <!-- AOS Animate on Scroll -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+
+    <link rel="stylesheet" href="css/style.css"> <!-- Custom CSS for the website -->
+    <link rel="stylesheet" href="css/home.css"> <!-- Custom CSS for the homepage -->
+    <link rel="stylesheet" href="css/about.css"> <!-- Custom CSS for the about page -->
+    <link rel="stylesheet" href="css/contact.css"> <!-- Custom CSS for the contact
+
+    <!-- jQuery link -->
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+
+<body>
+    <!-- Header Section -->
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg fixed-top">
+        <div class="container">
+            <!-- <img src="./img/Ventura.png" alt=""  class="navbar-brand " style="width: 100px; height: 100px;"> -->
+            <a class="navbar-brand d-flex align-items-center gap-2" href="#">
+                <img src="./img/ventura-logo.jpg" alt="Ventura Logo" width="45" height="40"
+                    class="d-inline-block align-text-top">
+                <span class="fw-bold text-uppercase  company-name">
+                    Ventura Alloy & Steels Pvt. Ltd.
+                </span>
+            </a>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#venturaNavbar"
+                aria-controls="venturaNavbar" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="venturaNavbar">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#" id="nav-home">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#" id="nav-about">About Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#" id="nav-contact">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- home section -->
+    <section id="home-section" class="home-section">
+
+        <!-- Hero Slider -->
+        <div id="heroCarousel" class="carousel slide carousel-fade" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <div class="d-block w-100  text-white bg-image-carousel"
+                        style="height: 500px; background: url('./img/banner1.jpeg') center/cover no-repeat;">
+
+                        <!-- Dark overlay -->
+                        <div
+                            style="position: absolute; top: 0; left: 0; height: 100%; width: 100%; background-color: rgba(0, 0, 0, 0.53); z-index: 1;">
+                        </div>
+
+                        <div class="container h-100 d-flex flex-column justify-content-center align-items-center text-center"
+                            style="z-index: 2; position: relative;">
+                            <h3 class="display-3 fw-bold">EMPOWERING INDIA'S STEEL BACKBONE</h3>
+                            <p class="lead">TRUSTED STEEL SOLUTIONS FOR INDUSTRIES THAT SHAPE THE NATION</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="d-block w-100 text-white bg-image-carousel"
+                        style="height: 500px; background: url('./img/banner2.jpeg') center/cover no-repeat;">
+
+                        <!-- Dark overlay -->
+                        <div
+                            style="position: absolute; top: 0; left: 0; height: 100%; width: 100%; background-color: rgba(0, 0, 0, 0.5); z-index: 1;">
+                        </div>
+
+                        <div class="container h-100 d-flex flex-column justify-content-center align-items-center text-center"
+                            style="z-index: 2; position: relative;">
+                            <h3 class="display-3 fw-bold">EFFICIENT STEEL TRADING. NATIONWIDE REACH.</h3>
+                            <p class="lead">SEAMLESS SOURCING AND SUPPLY OF HIGH-GRADE STEEL ACROSS SECTORS. </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="d-block w-100  text-white bg-image-carousel"
+                        style="height: 500px; background: url('./img/banner3.jpeg') center/cover no-repeat;">
+
+                        <!-- Dark overlay -->
+                        <div
+                            style="position: absolute; top: 0; left: 0; height: 100%; width: 100%; background-color: rgba(0, 0, 0, 0.3); z-index: 1;">
+                        </div>
+
+                        <div class="container h-100 d-flex flex-column justify-content-center align-items-center text-center"
+                            style="z-index: 2; position: relative;">
+                            <h3 class="display-3 fw-bold">ORGANIZED STEEL WAREHOUSING. ON TIME DELIVERY.</h3>
+                            <p class="lead">PRECISION LOGISTICS WITH ADVANCED INVENTORY AND STORAGE SUPPORT.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="d-block w-100  text-white bg-image-carousel"
+                        style="height: 500px; background: url('./img/banner4.jpeg') center/cover no-repeat;">
+
+                        <!-- Dark overlay -->
+                        <div
+                            style="position: absolute; top: 0; left: 0; height: 100%; width: 100%; background-color: rgba(0, 0, 0, 0.4); z-index: 1;">
+                        </div>
+
+                        <div class="container h-100 d-flex flex-column justify-content-center align-items-center text-center"
+                            style="z-index: 2; position: relative;">
+                            <h3 class="display-3 fw-bold">CUTTING-EDGE STEEL PROCESSING CUSTOMIZED FOR YOU.</h3>
+                            <p class="lead">PRECISION CUTTING, SLITTING, AND SHAPING WITH INDUSTRIAL-GRADE QUALITY.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="position-relative text-white bg-image-carousel"
+                        style="height: 500px; background: url('./img/banner2.jpeg') center/cover no-repeat;">
+
+                        <!-- Dark overlay -->
+                        <div
+                            style="position: absolute; top: 0; left: 0; height: 100%; width: 100%; background-color: rgba(0, 0, 0, 0.5); z-index: 1;">
+                        </div>
+
+                        <!-- Centered Text -->
+                        <div class="container h-100 d-flex flex-column justify-content-center align-items-center text-center"
+                            style="z-index: 2; position: relative;">
+                            <h3 class="display-3 fw-bold">OVER 30 YEARS OF STRENGTH, SERVICE & STANDARDS</h3>
+                            <p class="lead">A LEGACY OF QUALITY, RELIABILITY, AND CUSTOMER SATISFACTION SINCE 1990.</p>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+            <!-- Optional controls -->
+            <button class="carousel-control-prev" type="button" data-bs-target="#heroCarousel" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#heroCarousel" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            </button>
+        </div>
+
+        <!-- Welcome Section Start -->
+        <div class="welcome-section">
+            <div class="container container-welcome">
+                <div class="row align-items-center">
+                    <!-- Left Column -->
+                    <div class="col-md-6 mb-4" data-aos="fade-right">
+                        <div class="welcome-header text-center text-md-start">
+                            <p class="text-uppercase text-muted fw-semibold mb-2" style="letter-spacing: 1px;">Welcome
+                                To
+                            </p>
+                            <h2>Ventura Alloy and Steels Pvt Ltd</h2>
+                            <div class="highlight-bar"></div>
+                            <p class="text-justify">
+                                Ventura Alloy & Steels trades in a wide spectrum of Tool and Alloy Steel products
+                                including
+                                Hot Work Tool Steel, Cold Work Tool Steel, Spring Steel, Die Block Steel, Alloy Steel,
+                                and
+                                Plastic Mould Steel. Our inventory includes wear-resistant, dimensionally accurate
+                                products
+                                ensuring premium quality and performance.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Right Column with Cards -->
+                    <div class="col-md-6">
+                        <div class="row g-4">
+                            <!-- Quality Card -->
+                            <div class="col-12" data-aos="fade-up" data-aos-delay="100">
+                                <div class="info-box h-100 text-center text-md-start">
+                                    <i class="bi bi-award-fill"></i>
+                                    <h5>Quality</h5>
+                                    <p class="text-justify">
+                                        Every supply includes certified documentation with details like chemical
+                                        composition, hardness, and micro-structural properties—ensuring only the highest
+                                        standards.
+                                    </p>
+                                </div>
+                            </div>
+
+                            <!-- Infrastructure Card -->
+                            <div class="col-12" data-aos="fade-up" data-aos-delay="200">
+                                <div class="info-box h-100 text-center text-md-start">
+                                    <i class="bi bi-building"></i>
+                                    <h5>Infrastructure</h5>
+                                    <p class="text-justify">
+                                        With a prime office in Mumbai and a 12,000 sq. ft. warehouse in Bhiwandi, our
+                                        infrastructure ensures seamless operations and easy access for our clients and
+                                        partners.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Welcome Section End -->
+
+    </section>
+    <!-- home section ends -->
+
+    <!-- about-section starts -->
+    <section id="about-section" class="about-section">
+
+
+        <div class="container container-about">
+            <div class="about-content mt-5 text-center" data-aos="fade-left">
+                <h2>About Ventura Alloy and Steels Pvt Ltd</h2>
+                <p class="text-muted">Precision. Quality. Legacy.</p>
+            </div>
+            <div class=" align-items-center vision-mission-content">
+                <div class="mt-4 mt-md-0">
+                    <p><strong>Ventura Alloys & Steels Private Limited</strong> is a name synonymous with quality,
+                        precision, and
+                        trust in the steel industry. Established in 1965 by visionary entrepreneur <strong>Mr. Bharat
+                            Dipchand
+                            Shah</strong>, the company started its journey by stocking and importing Tool and Alloy
+                        Steels.
+                        With a
+                        strategic shift from TMT bars to specialty steels, Ventura quickly established itself as a
+                        reliable
+                        partner
+                        across India.</p>
+
+                    <div class="container container-about">
+                        <img src="./img/about1.jpg" alt="Ventura Alloy and Steels Pvt Ltd" class="img-fluid about-image"
+                            data-aos="fade-right">
+                    </div>
+
+                    <p>We are an <strong>ISO 9001:2015 certified</strong> company and have grown into a multi-crore
+                        enterprise under
+                        the leadership of <strong>Mr. Aashish Bharat Shah</strong>. Our commitment to innovation and
+                        excellence
+                        drives us to serve as Importers, Exporters, Stockists, Distributors, and Suppliers of
+                        high-quality
+                        steel
+                        products.</p>
+
+                    <ul>
+                        <li>Cold Work Tool Steels</li>
+                        <li>Hot Work Tool Steels</li>
+                        <li>Spring Steels</li>
+                        <li>Die Block Steels</li>
+                        <li>Alloy Steels</li>
+                        <li>Plastic Mould Steels</li>
+                    </ul>
+
+                    <p>We cater to various sectors including automotive, engineering, extrusion, petrochemicals, and
+                        forging. Our
+                        robust infrastructure includes modern warehousing and packaging facilities to meet bulk
+                        industrial
+                        needs
+                        efficiently.</p>
+
+                    <p>Ventura is a proud member of renowned industry bodies like <strong>IGCC, ICCCI, DISMA, MASSMA,
+                            SUFI,
+                            TSSIA,
+                            TAGMA, CAMIT</strong> and more. With Ventura, you don’t just get steel — you gain a trusted
+                        partnership
+                        built on performance and precision.</p>
+                </div>
+
+            </div>
+
+        </div>
+
+        <div id="vision-mission" class="py-5" style="background-color: #f8f9fa;">
+
+            <div class="container container-about">
+                <div class="text-center mb-5 bg-vision-mission">
+                    <h2 class="fw-bold text-uppercase">Vision, Mission & Core Values</h2>
+                    <p>Guiding principles that shape our success and integrity</p>
+                </div>
+
+                <div class="row g-4">
+                    <!-- Vision Card -->
+                    <div class="col-md-4" data-aos="fade-up" data-aos-delay="100">
+                        <div class="card border-0 shadow-sm h-100 vision-mission-card p-4">
+                            <div class="d-flex align-items-center mb-3">
+                                <div class="icon-circle bg-gradient-primary text-white me-3">
+                                    <i class="bi bi-eye-fill fs-4"></i>
+                                </div>
+                                <h5 class="fw-semibold text-dark mb-0">Our Vision</h5>
+                            </div>
+                            <p class="text-muted mb-0">
+                                To be a globally recognized leader in Tool and Alloy Steels, driven by innovation,
+                                excellence,
+                                and ethical growth.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Mission Card -->
+                    <div class="col-md-4" data-aos="fade-up" data-aos-delay="200">
+                        <div class="card border-0 shadow-sm h-100 vision-mission-card p-4">
+                            <div class="d-flex align-items-center mb-3">
+                                <div class="icon-circle bg-gradient-success text-white me-3">
+                                    <i class="bi bi-bullseye fs-4"></i>
+                                </div>
+                                <h5 class="fw-semibold text-dark mb-0">Our Mission</h5>
+                            </div>
+                            <p class="text-muted mb-0">
+                                To supply premium-grade steel products using advanced technology and sustainable
+                                business
+                                practices, while exceeding client expectations.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Core Values Card -->
+                    <div class="col-md-4" data-aos="fade-up" data-aos-delay="300">
+                        <div class="card border-0 shadow-sm h-100 vision-mission-card p-4">
+                            <div class="d-flex align-items-center mb-3">
+                                <div class="icon-circle bg-gradient-warning text-white me-3">
+                                    <i class="bi bi-stars fs-4"></i>
+                                </div>
+                                <h5 class="fw-semibold text-dark mb-0">Our Core Values</h5>
+                            </div>
+                            <p class="text-muted mb-0">
+                                Integrity, quality, innovation, customer focus, and continuous improvement are the
+                                principles
+                                that guide our everyday work.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="management" class="py-5 bg-light">
+            <div class="container container-about">
+                <div class="text-center mb-5">
+                    <h2 class="fw-bold text-uppercase" style="font-family: 'Lora', serif;">Our Management</h2>
+                    <p class="text-muted" style="font-family: 'Roboto', sans-serif;">Leadership that drives innovation
+                        and
+                        excellence.</p>
+                </div>
+
+                <div class="row g-4">
+                    <!-- Card 1 -->
+                    <div class="col-md-4" data-aos="fade-up" data-aos-delay="100">
+                        <div class="card h-100 border-0 shadow-sm text-center p-4">
+                            <img src="./img/a-man.jpg" alt="Bharat Shah" class="rounded-circle mx-auto mb-3" width="100"
+                                height="100">
+                            <h5 class="fw-bold" style="font-family: 'Lora', serif;">Mr. Bharat Dipchand Shah</h5>
+                            <p class="text-muted mb-1"><em>Director · Founder & Mentor</em></p>
+                            <p class="text-muted small">With decades of rich experience, Mr. Shah provides strategic
+                                guidance
+                                and values-based leadership, shaping the company’s growth and community engagement.</p>
+                        </div>
+                    </div>
+
+                    <!-- Card 2 -->
+                    <div class="col-md-4" data-aos="fade-up" data-aos-delay="200">
+                        <div class="card h-100 border-0 shadow-sm text-center p-4">
+                            <img src="./img/a-man.jpg" alt="Aashish Shah" class="rounded-circle mx-auto mb-3"
+                                width="100" height="100">
+                            <h5 class="fw-bold" style="font-family: 'Lora', serif;">Mr. Aashish Bharat Shah</h5>
+                            <p class="text-muted mb-1"><em>Chairman & Director</em></p>
+                            <p class="text-muted small">A strategic thinker with a diploma in Business Finance, Aashish
+                                modernized operations and emphasizes value, integrity, and client relationships.</p>
+                        </div>
+                    </div>
+
+                    <!-- Card 3 -->
+                    <div class="col-md-4" data-aos="fade-up" data-aos-delay="300">
+                        <div class="card h-100 border-0 shadow-sm text-center p-4">
+                            <img src="./img/a-man.jpg" alt="Poonam Shah" class="rounded-circle mx-auto mb-3" width="100"
+                                height="100">
+                            <h5 class="fw-bold" style="font-family: 'Lora', serif;">Mrs. Poonam Ashish Shah</h5>
+                            <p class="text-muted mb-1"><em>Director</em></p>
+                            <p class="text-muted small">With an MBA in International Business, Poonam leads marketing
+                                strategies
+                                and oversees operational decisions for global brand positioning.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="our-team" class="py-5" style="background-color: #f2f3f4;">
+            <div class="container container-about">
+                <div class="text-center mb-5">
+                    <h2 class="fw-bold text-uppercase" style="font-family: 'Lora', serif; color: #333;">Our Team</h2>
+                    <p class="text-muted" style="font-family: 'Roboto', sans-serif;">
+                        A team built on skill, efficiency, and a shared commitment to excellence.
+                    </p>
+                </div>
+
+                <div class="row g-4 text-center">
+                    <!-- Team Role Card -->
+                    <div class="col-md-4" data-aos="fade-up" data-aos-delay="100">
+                        <div class="p-4 rounded shadow-sm h-100 team-card" style="background-color: #e6e7e9;">
+                            <i class="bi bi-boxes fs-1 mb-3" style="color: #5d7290;"></i>
+                            <h5 class="fw-semibold" style="font-family: 'Lora', serif; color: #222;">Sourcing Agents
+                            </h5>
+                            <p class="text-muted small">Skilled professionals ensuring timely and cost-effective
+                                procurement of
+                                quality materials.</p>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4" data-aos="fade-up" data-aos-delay="200">
+                        <div class="p-4 rounded shadow-sm h-100 team-card" style="background-color: #e6e7e9;">
+                            <i class="bi bi-tools fs-1 mb-3" style="color: #5d7290;"></i>
+                            <h5 class="fw-semibold" style="font-family: 'Lora', serif; color: #222;">Technicians</h5>
+                            <p class="text-muted small">Experts in operational excellence, precision work, and plant
+                                performance.</p>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4" data-aos="fade-up" data-aos-delay="300">
+                        <div class="p-4 rounded shadow-sm h-100 team-card" style="background-color: #e6e7e9;">
+                            <i class="bi bi-shield-check fs-1 mb-3" style="color: #5d7290;"></i>
+                            <h5 class="fw-semibold" style="font-family: 'Lora', serif; color: #222;">Quality Controllers
+                            </h5>
+                            <p class="text-muted small">Guardians of product quality who ensure each batch meets
+                                industry
+                                standards.</p>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6" data-aos="fade-up" data-aos-delay="400">
+                        <div class="p-4 rounded shadow-sm h-100 team-card" style="background-color: #e6e7e9;">
+                            <i class="bi bi-box-arrow-down fs-1 mb-3" style="color: #5d7290;"></i>
+                            <h5 class="fw-semibold" style="font-family: 'Lora', serif; color: #222;">Warehouse Personnel
+                            </h5>
+                            <p class="text-muted small">Responsible for logistics, organization, and product handling
+                                with
+                                efficiency.</p>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6" data-aos="fade-up" data-aos-delay="500">
+                        <div class="p-4 rounded shadow-sm h-100 team-card" style="background-color: #e6e7e9;">
+                            <i class="bi bi-megaphone fs-1 mb-3" style="color: #5d7290;"></i>
+                            <h5 class="fw-semibold" style="font-family: 'Lora', serif; color: #222;">Sales & Marketing
+                            </h5>
+                            <p class="text-muted small">Building connections and opportunities to take Ventura’s brand
+                                forward.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+    <!-- about-section ends -->
+
+    <!-- contact-section starts -->
+    <section id="contact-section" class="contact-section mb-4">
+        <div class="container-fluid">
+            <!-- Left Static Image -->
+            <div class="left-image d-none d-md-block">
+
+            </div>
+
+            <!-- Right Scrollable Form -->
+            <div class="right-form">
+                <h2>Contact Us</h2>
+
+                <div class="mb-4">
+
+                    <p class="text-muted mb-2">
+                        <i class="bi bi-telephone-fill text-secondary me-2"></i>
+                        We're just a message away — feel free to reach out for product inquiries or support.
+                    </p>
+                </div>
+                <!-- Success Message -->
+                <div id="successMessage" class="alert alert-success d-none" role="alert">
+                    ✅ Your message has been submitted successfully. We'll get back to you soon!
+                </div>
+                <div class="img-contact">
+                    <img src="./img/a-woman-women.jpg" alt="contact-image" class="img-fluid ">
+                </div>
+
+                <!-- Contact Form -->
+                <form id="venturaContactForm" class="needs-validation" novalidate>
+                    <!-- Full Name -->
+                    <div class="mb-3">
+                        <label for="fullName" class="form-label">Full Name *</label>
+                        <input type="text" class="form-control" id="fullName" placeholder="Enter your full name"
+                            required data-bs-toggle="tooltip" data-bs-placement="top"
+                            title="Please enter your first and last name.">
+                        <div class="invalid-feedback">Please enter your name.</div>
+                    </div>
+
+                    <!-- Email -->
+                    <div class="mb-3">
+                        <label for="email" class="form-label">Email Address *</label>
+                        <input type="email" class="form-control" id="email" placeholder="example@email.com" required
+                            data-bs-toggle="tooltip" data-bs-placement="top" title="We'll never share your email.">
+                        <div class="invalid-feedback">Please enter a valid email address.</div>
+                    </div>
+
+                    <!-- Mobile -->
+                    <div class="mb-3">
+                        <label for="phone" class="form-label">Mobile Number *</label>
+                        <input type="tel" class="form-control" id="phone" placeholder="10-digit mobile number"
+                            pattern="[0-9]{10}" required data-bs-toggle="tooltip" data-bs-placement="top"
+                            title="Enter a valid 10-digit mobile number.">
+                        <div class="invalid-feedback">Please enter a valid 10-digit mobile number.</div>
+                    </div>
+
+                    <!-- Message -->
+                    <div class="mb-3">
+                        <label for="message" class="form-label">Your Message *</label>
+                        <textarea class="form-control" id="message" rows="4" placeholder="Write your message here..."
+                            required data-bs-toggle="tooltip" data-bs-placement="top"
+                            title="Write your query, feedback, or request."></textarea>
+                        <div class="invalid-feedback">Message is required.</div>
+                    </div>
+
+                    <!-- Submit Button -->
+                    <button type="submit" class="btn btn-submit">Submit</button>
+                </form>
+
+
+                <!-- Company Info from Ventura Website -->
+                <div class="company-info mt-5">
+                    <h5 class="mb-3">Ventura Alloys & Steels Pvt. Ltd.</h5>
+
+                    <p><strong>Head Office:</strong><br>
+                        Unit No. 1201 & 1202, Ghanshyam Enclave P. Co‑Op. Soc. Ltd.,<br>
+                        New Link Road, Near Laljipada Police Station,<br>
+                        Kandivali (West), Mumbai – 400067<br>
+                        <strong>Tel.:</strong> +91 22 2869 3824 / 9324959833<br>
+                        <strong>Cell:</strong> +91 9819225666 / 9322266999
+                    </p>
+
+                    <p><strong>Stocking & Machining Centre:</strong><br>
+                        Gala No. 6, Building No. 183, Indian Corporation,<br>
+                        Mouje Gundavli (Mankoli – Phata),<br>
+                        Bhiwandi – 421302<br>
+                        <strong>Cell:</strong> +91 7977097655<br>
+                        <strong>Email:</strong> <a href="mailto:sales@venturasteels.com">sales@venturasteels.com</a>, <a
+                            href="mailto:aashish@venturasteels.com">aashish@venturasteels.com</a>
+                    </p>
+
+                    <!-- Map -->
+                    <div class="map-box">
+                        <div id="map"></div>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+    </section>
+    <!-- contact-section ends -->
+
+    <!-- Footer Start -->
+    <footer class="custom-footer">
+        <div class="container container-footer">
+            <div class="row align-items-center gy-4">
+                <!-- Left Column: About -->
+                <div class="col-md-4">
+                    <h5>About Ventura</h5>
+                    <p class="footer-text">
+                        Ventura Alloy & Steels Pvt Ltd delivers superior Tool & Alloy Steels with guaranteed quality,
+                        infrastructure, and timely service across India.
+                    </p>
+                </div>
+
+                <!-- Center Column: Logo and Social Icons -->
+                <div class="col-md-4 text-center">
+                    <div class="footer-logo mb-2">Ventura Steels</div>
+                    <div class="social-icons d-flex justify-content-center gap-3">
+                        <a href="#"><i class="bi bi-facebook"></i></a>
+                        <a href="#"><i class="bi bi-linkedin"></i></a>
+                        <a href="#"><i class="bi bi-twitter"></i></a>
+                        <a href="#"><i class="bi bi-instagram"></i></a>
+                    </div>
+                </div>
+
+                <!-- Right Column: Quick Links -->
+                <div class="col-md-4">
+                    <h5>Quick Links</h5>
+                    <ul class="footer-links list-unstyled">
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Contact</a></li>
+                        <li><a href="#">Products</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Bottom Bar -->
+            <hr />
+            <div class="text-center small mt-3 ">
+                © 2025 Ventura Alloy and Steels Pvt Ltd. | All rights reserved · ISO 9001 Certified
+            </div>
+        </div>
+    </footer>
+    <!-- Footer End -->
+
+    <!-- Leaflet JS -->
+    <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+
+
+    <!--Bootstrap JS-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- AOS JS -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            duration: 1000,
+            once: true
+        });
+    </script>
+    <!-- Custom JS -->
+    <script src="js/script.js"></script>
+
+</body>
+
+</html>

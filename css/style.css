@@ -1,0 +1,253 @@
+body {
+    padding-top: 70px;
+    background-color: #f5f5f5;
+    font-family: "roboto", sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'Lora', serif;
+    font-weight: 600;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.container {
+    margin: auto 50px;
+}
+
+.navbar {
+    background-color: #e3e7eb;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    justify-content: space-evenly;
+}
+.navbar .container a img {
+  border-radius: 5px;
+}
+
+.company-name {
+    font-family: 'Titillium Web', sans-serif;
+    font-size: 1.2rem;
+    letter-spacing: 0.5px;
+    color: #5d7290;
+    transition: color 0.3s ease;
+}
+
+.company-name:hover {
+    color: #5d7290;
+}
+
+.nav-link {
+    font-weight: 500;
+    color: #fff !important;
+    background-color: #5d7290 !important;
+}
+
+.nav-link:hover {
+    color: #333 !important;
+    background-color: transparent !important;
+}
+
+.navbar-nav {
+    gap: 10px;
+}
+
+.nav-item .nav-link {
+    padding: 6px 20px !important;
+    margin-right: 10px;
+    border: 1px solid #5d7290;
+    border-radius: 15px;
+    background: transparent;
+    transition: 0.3s ease;
+}
+
+/* navbar ends */
+
+/* Footer Styling starts */
+.container-footer {
+    margin: 0px auto;
+}
+
+.custom-footer {
+    background: linear-gradient(135deg, #2c3e50, #3b4b5c);
+    color: #f1f1f1;
+    padding: 60px 0 30px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.custom-footer h5 {
+    font-weight: 600;
+    margin-bottom: 1rem;
+    color: #ffffff;
+}
+
+.custom-footer .footer-text {
+    color: #dcdcdc;
+    font-size: 0.95rem;
+    text-align: justify;
+}
+
+.custom-footer .footer-logo {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #ffffff;
+    letter-spacing: 1px;
+    margin-bottom: 0.5rem;
+}
+
+.custom-footer .social-icons a {
+    font-size: 1.2rem;
+    color: #f1f1f1;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.custom-footer .social-icons a:hover {
+    color: #ffd369;
+    transform: scale(1.2);
+}
+
+.custom-footer .footer-links a {
+    display: inline-block;
+    color: #dcdcdc;
+    text-decoration: none;
+    margin-bottom: 8px;
+    font-size: 0.95rem;
+    transition: all 0.3s ease;
+}
+
+.custom-footer .footer-links a:hover {
+    text-decoration: underline;
+    color: #ffd369;
+}
+
+.custom-footer hr {
+    border-top: 1px solid #f5f5f5;
+    margin-top: 2rem;
+}
+
+/* footer styling ends */
+
+/* media queries for responsive */
+@media screen and (max-width: 411px) {
+    .company-name {
+        font-size: 0.75rem;
+    }
+
+    .gap-2 {
+        gap: .4rem 7px !important;
+    }
+
+    .navbar>.container {
+        margin: 10px;
+        padding: 0px;
+    }
+
+    .navbar .container a img {
+        width: 25px;
+        height: 25px;
+    }
+
+    .navbar-nav {
+        margin-top: 10px;
+        gap: 10px;
+    }
+
+    .navbar-toggler-icon {
+        font-size: 12px;
+    }
+
+    .custom-footer h5 {
+        text-align: center;
+    }
+
+    .list-unstyled {
+        padding-left: 0;
+        list-style: none;
+        text-align: center;
+    }
+
+    .custom-footer .footer-logo {
+        font-size: 1.3rem;
+        font-weight: 600;
+    }
+
+}
+
+@media (min-width: 412px) and (max-width: 511px) {
+
+    .company-name {
+        font-size: .7rem !important;
+    }
+
+    .navbar .container a img {
+        width: 30px !important;
+        height: 30px !important;
+    }
+        .welcome-header p {
+            font-size: 0.89rem !important;
+        }
+        .welcome-header h2 {
+            font-weight: 600;
+            font-size: 1.7rem !important;
+            margin-bottom: 10px !important;
+        }
+
+
+}
+
+@media (min-width: 412px) and (max-width: 768px) {
+
+    .company-name {
+        font-size: 1rem;
+    }
+
+    .gap-2 {
+        gap: .5rem 15px !important;
+    }
+
+    .navbar>.container {
+        margin: 0px auto;
+        gap: 0px 30px;
+        max-width: 100%;
+    }
+
+    /* .container,
+    .container-sm {
+        max-width: 100%;
+    } */
+
+    .navbar .container a img {
+        width: 40px;
+        height: 40px;
+    }
+
+    .navbar-nav {
+        margin-top: 10px;
+        gap: 10px;
+    }
+
+    .navbar-toggler-icon {
+        font-size: 18px;
+    }
+
+    .custom-footer h5 {
+        text-align: center;
+    }
+
+    .list-unstyled {
+        padding-left: 0;
+        list-style: none;
+        text-align: center;
+    }
+
+    .custom-footer .footer-logo {
+        font-size: 1.3rem;
+        font-weight: 600;
+    }
+}
