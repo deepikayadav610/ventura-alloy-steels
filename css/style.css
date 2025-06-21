@@ -27,8 +27,9 @@ html {
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     justify-content: space-evenly;
 }
+
 .navbar .container a img {
-  border-radius: 5px;
+    border-radius: 5px;
 }
 
 .company-name {
@@ -131,6 +132,10 @@ html {
     margin-top: 2rem;
 }
 
+.ventura-footer {
+    justify-content: center;
+}
+
 /* footer styling ends */
 
 /* media queries for responsive */
@@ -189,14 +194,16 @@ html {
         width: 30px !important;
         height: 30px !important;
     }
-        .welcome-header p {
-            font-size: 0.89rem !important;
-        }
-        .welcome-header h2 {
-            font-weight: 600;
-            font-size: 1.7rem !important;
-            margin-bottom: 10px !important;
-        }
+
+    .welcome-header p {
+        font-size: 0.89rem !important;
+    }
+
+    .welcome-header h2 {
+        font-weight: 600;
+        font-size: 1.7rem !important;
+        margin-bottom: 10px !important;
+    }
 
 
 }
@@ -216,11 +223,6 @@ html {
         gap: 0px 30px;
         max-width: 100%;
     }
-
-    /* .container,
-    .container-sm {
-        max-width: 100%;
-    } */
 
     .navbar .container a img {
         width: 40px;

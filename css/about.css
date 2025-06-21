@@ -18,14 +18,19 @@
 
 .bg-vision-mission {
     background-color: #5d7290;
-    color: #ffffff ;
+    color: #ffffff;
     padding: 15px 0px;
     border: 5px solid #e3e7eb;
     border-radius: 5px;
 }
+
 .bg-vision-mission h2 {
     margin-bottom: 10px;
     color: #ffffff;
+}
+
+.bg-vision-mission p {
+    margin: 0px 10px 10px;
 }
 
 .vision-mission-content p {
@@ -34,6 +39,14 @@
 
 .vision-mission-card {
     background-color: #e3e7eb;
+}
+
+.vision-mission-card div {
+    justify-content: center;
+}
+
+.vision-mission-card p {
+    text-align: justify;
 }
 
 /* Gradient backgrounds for icons */
